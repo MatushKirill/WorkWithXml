@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"
+    targetNamespace="http://ddd.com/blabla.xsd">
+    <xs:complexType name="callp">
+        <xs:sequence>
+            <xs:element name="WithinTheNetwork" type="xs:integer"/>
+            <xs:element name="OutOfTheNetwork" type="xs:double"/>
+            <xs:element name="OnTheLandlinPhone">
+                <xs:simpleType>
+                    <xs:restriction base="xs:double">
+                        <xs:enumeration value="1"/>
+                        <xs:enumeration value="0.5"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>            
+        </xs:sequence>
+    </xs:complexType>
+    
+</xs:schema>

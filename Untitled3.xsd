@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+    elementFormDefault="qualified"
+    xmlns:myspace="http://ddd.com/blabla.xsd">
+    
+    <xs:import schemaLocation="additional.xsd" namespace="http://ddd.com/blabla.xsd"/>
+    
+    <xs:element name="Tariffs" type="tariffsType"/>
+    <xs:complexType name="tariffsType">
+        <xs:sequence>
+            <xs:element name="Tariff" type="tariffType" minOccurs="1" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType> 
+    <xs:complexType name="tariffType" >
+        <xs:sequence>
+            <xs:element name="name" type="xs:string"/>
+            <xs:element name="OperatorName" type="xs:string"/>
+            <xs:element name="Payroll" type="xs:integer"/>
+            <xs:element name="CallPrice" type="myspace:callp"/>
+            <xs:element name="Parameters">
+                <xs:complexType >
+                    <xs:sequence>
+                        <xs:element name="ConnectinFee" type="xs:integer"/>
+                        <xs:element name="Tariffication" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+        <xs:attribute name="id" type="xs:ID" use="required"/>
+    </xs:complexType>
+   
+
+    
+    
+</xs:schema>

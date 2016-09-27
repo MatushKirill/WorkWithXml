@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="Untitled1.xsl"?>
+<Tariffs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://ddd.com/hjghjg Untitled3.xsd"
+         xmlns:myspace="http://ddd.com/blabla.xsd">
+    <Tariff id="h001">
+        <name>Free Life</name>
+        <OperatorName>Life</OperatorName>
+        <Payroll>59</Payroll>
+        <CallPrice>
+            <myspace:WithinTheNetwork>0</myspace:WithinTheNetwork>
+            <myspace:OutOfTheNetwork>0.4</myspace:OutOfTheNetwork>
+            <myspace:OnTheLandlinPhone>1</myspace:OnTheLandlinPhone>
+        </CallPrice>
+        <Parameters>
+            <ConnectinFee>3</ConnectinFee>
+            <Tariffication>minute</Tariffication>
+        </Parameters>
+    </Tariff>
+
+    <Tariff id="h002">
+        <name>MTC</name>
+        <OperatorName>MTC</OperatorName>
+        <Payroll>40</Payroll>
+        <CallPrice>
+            <myspace:WithinTheNetwork>0</myspace:WithinTheNetwork>
+            <myspace:OutOfTheNetwork>0.4</myspace:OutOfTheNetwork>
+            <myspace:OnTheLandlinPhone>1</myspace:OnTheLandlinPhone>
+        </CallPrice>
+        <Parameters>
+            <ConnectinFee>3</ConnectinFee>
+            <Tariffication>minute</Tariffication>
+        </Parameters>
+    </Tariff>
+</Tariffs>
